@@ -1,0 +1,6 @@
+#lang racket
+
+(define (range a b)
+  (cond (= a b)
+        [display a]
+        [(display "-") range (+ 1 a) b]))
